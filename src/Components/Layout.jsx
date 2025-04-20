@@ -5,7 +5,7 @@ function Layout() {
     return (
         <>
             <Sidebar />
-            <div className=" p-4 overflow-y-auto">
+            <div className="">
                 <Outlet />
             </div>
         </>
