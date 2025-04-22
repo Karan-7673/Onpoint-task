@@ -1,15 +1,14 @@
 # React Redux Dashboard
 
 
-## 🔧 How to Run This Project
+##  How to Run This Project ##
 
-1. **Clone the Repository**
+1. Clone the Repository
 
-```bash
 git clone <your-repo-url>
 cd <project-directory>
 
-2. **How to run **
+2. How to run 
 
  npm install
 
