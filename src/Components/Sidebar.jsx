@@ -41,7 +41,8 @@ export default function SidebarWithNavbar() {
                 </div>
 
 
-                <div className="flex-1 p-0 md:p-3 overflow-y-auto">
+                <div className="flex-1 p-0 md:p-3 overflow-y-auto
+                ">
                     <Outlet />
                 </div>
             </div>
