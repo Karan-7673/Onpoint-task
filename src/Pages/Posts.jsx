@@ -33,7 +33,7 @@ const Posts = () => {
                 loader={<p className="text-blue-500">Loading more posts...</p>}
                 endMessage={<p className="text-center text-gray-500 mt-4">No more posts</p>}
             >
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-1 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-1 gap-4">
                     {posts.map((post) => (
                         <div key={post.id} className="p-4 border rounded shadow bg-white">
                             <h2 className="font-bold text-lg mb-2">{post.title}</h2>
