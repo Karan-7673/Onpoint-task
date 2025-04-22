@@ -5,8 +5,6 @@
 
 1. Clone the Repository
 
-git clone <your-repo-url>
-cd <project-directory>
 
 2. How to run 
 
