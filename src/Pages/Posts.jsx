@@ -13,13 +13,15 @@ const Posts = () => {
     }, [dispatch, page])
 
     const fetchMoreData = () => {
-        setPage((prev) => prev + 1)
+        if (!loading && hasMore) {
+            setPage(prev => prev + 1); // triggers useEffect to dispatch next page
+        }
     }
 
     return (
         <div className="p-4">
             <h1 className="text-2xl font-semibold mb-4">Posts</h1>
-            {loading && posts.length === 0 && <p className='text-blue-500'>Loading Post</p>}
+            {loading && <p className='text-blue-500'>Loading Post</p>}
 
             {error && <p className='text-red-500'> Error</p>}
 

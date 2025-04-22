@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 
-export const fetchPosts = createAsyncThunk('posts/fetchPosts', async (page = 1, thunkAPI) => {
-    const limit = 10
+export const fetchPosts = createAsyncThunk('posts/fetchPosts', async (page = 1) => {
+    const limit = 100
     const response = await fetch(`https://jsonplaceholder.typicode.com/posts?_limit=${limit}&_page=${page}`)
 
     if (!response.ok) {

@@ -47,7 +47,7 @@ export default function Users() {
                             <th className="p-3">Username</th>
                             <th className="p-3 hidden md:table-cell">Email</th>
                             <th className="p-3 hidden lg:table-cell">City</th>
-                            <th className="p-3 hidden lg:table-cell">Compony</th>
+                            <th className="p-3 hidden xl:table-cell">Compony</th>
                             <th className="p-3 hidden xl:table-cell">Website</th>
                             <th className="p-3">Action</th>
                         </tr>
@@ -60,7 +60,7 @@ export default function Users() {
                                 <td className="p-3">{user.username}</td>
                                 <td className="p-3 hidden md:table-cell">{user.email}</td>
                                 <td className="p-3 hidden lg:table-cell">{user.address.city}</td>
-                                <td className="p-3 hidden lg:table-cell">{user.company.name}</td>
+                                <td className="p-3 hidden xl:table-cell">{user.company.name}</td>
                                 <td className="p-3  hidden xl:table-cell">{user.website}</td>
                                 <td className="p-3">
                                     <button
