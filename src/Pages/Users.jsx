@@ -37,7 +37,7 @@ export default function Users() {
             {error && <p className="text-red-500">Error: {error}</p>}
 
 
-            {/* Table */}
+            
             {!loading && !error && (
                 <table className="min-w-full bg-white rounded shadow">
                     <thead>
@@ -76,7 +76,6 @@ export default function Users() {
                 </table>
             )}
 
-            {/* Modal */}
             {selectedUser && (
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
                     <div className="bg-white w-[90%] md:w-[500px] rounded-lg p-6 relative">

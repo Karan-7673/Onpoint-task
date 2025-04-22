@@ -9,8 +9,8 @@
 git clone <your-repo-url>
 cd <project-directory>
 
+2. **How to run **
 
-2. Install Dependencies
  npm install
 
  npm run dev

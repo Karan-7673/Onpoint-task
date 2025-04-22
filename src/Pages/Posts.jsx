@@ -14,7 +14,7 @@ const Posts = () => {
 
     const fetchMoreData = () => {
         if (!loading && hasMore) {
-            setPage(prev => prev + 1); // triggers useEffect to dispatch next page
+            setPage(prev => prev + 1);
         }
     }
 
@@ -34,7 +34,7 @@ const Posts = () => {
                         hasMore={hasMore}
 
                     >
-                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
                             {posts.map((post) => (
                                 <div key={post.id} className="p-4 border rounded shadow bg-white">
                                     <h2 className="font-bold text-lg mb-2">{post.title}</h2>
